@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import user from "@/assets/user.png"
+import user from "@/assets/user.png";
+import NavLinks from "./NavLinks";
 
 const Navbar = () => {
   return (
@@ -28,29 +29,13 @@ const Navbar = () => {
             tabIndex="-1"
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-gray-500 text-xl font-medium"
           >
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/about">About</Link>
-            </li>
-            <li>
-              <Link href="/career">Career</Link>
-            </li>
+            <NavLinks />
           </ul>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-gray-500 text-md font-medium">
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
-            <Link href="/career">Career</Link>
-          </li>
+          <NavLinks />
         </ul>
       </div>
       <div className="navbar-end gap-5">
