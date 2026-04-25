@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Ayesha Rahman",
+    "role": "Senior Reporter",
+    "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80",
+    "bio": "Covers political and international breaking news with deep analysis."
+  },
+  {
+    "id": 2,
+    "name": "Rahim Uddin",
+    "role": "Content Editor",
+    "image": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=300&q=80",
+    "bio": "Ensures every article meets editorial standards and fact accuracy."
+  },
+  {
+    "id": 3,
+    "name": "Nusrat Jahan",
+    "role": "Investigative Journalist",
+    "image": "https://images.unsplash.com/photo-1546961329-78bef0414d7c?auto=format&fit=crop&w=300&q=80",
+    "bio": "Focuses on in-depth investigative stories and social issues."
+  }
+]

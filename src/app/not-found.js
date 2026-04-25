@@ -33,14 +33,14 @@ export default function NotFound() {
           {/* Go Back Button */}
           <button
             onClick={() => router.back()}
-            className="btn btn-outline gap-2"
+            className="btn btn-outline text-violet-600 gap-2"
           >
             <FaArrowLeft />
             Go Back
           </button>
 
           {/* Home Button */}
-          <Link href="/" className="btn btn-primary gap-2">
+          <Link href="/" className="btn btn-primary bg-violet-600 border-none gap-2">
             <FaHome />
             Go Home
           </Link>

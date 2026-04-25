@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaBullseye, FaEye, FaShieldAlt } from "react-icons/fa";
+import team from "@/data/journalist.json";
 
 const AboutPage = () => {
   return (
@@ -103,17 +104,21 @@ const AboutPage = () => {
           </p>
 
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 mt-10">
-            {[1, 2, 3].map((item) => (
-              <div key={item} className="card bg-base-100 shadow-md p-6">
-                <Image
-                  src={`https://i.pravatar.cc/150?img=${item}`}
-                  alt="Team Member"
-                  width={80}
-                  height={80}
-                  className="rounded-full mx-auto"
-                />
-                <h4 className="mt-4 font-semibold">Journalist Name</h4>
-                <p className="text-sm text-gray-500">Senior Reporter</p>
+            {team.map((member) => (
+              <div key={member.id} className="card bg-base-100 shadow-md p-6">
+                <div className="w-20 h-20 mx-auto rounded-full overflow-hidden">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    width={80}
+                    height={80}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+
+                <h4 className="mt-4 font-semibold">{member.name}</h4>
+                <p className="text-sm text-red-600">{member.role}</p>
+                <p className="text-sm text-gray-500 mt-2">{member.bio}</p>
               </div>
             ))}
           </div>
@@ -128,7 +133,7 @@ const AboutPage = () => {
         </p>
 
         <Link href="/career">
-          <button className="btn btn-primary mt-6">View Careers</button>
+          <button className="btn bg-violet-600 text-white mt-6">View Careers</button>
         </Link>
       </section>
     </div>

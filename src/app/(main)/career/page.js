@@ -44,7 +44,7 @@ const CareerPage = () => {
 
         <p className="mt-6 text-gray-500">
           We are building a fearless newsroom that values truth, integrity, and
-          impact. If you're passionate about storytelling, we want you on our
+          impact. If you&apos;re passionate about storytelling, we want you on our
           team.
         </p>
       </section>
@@ -95,7 +95,7 @@ const CareerPage = () => {
 
                 {/* APPLY BUTTON */}
                 <button
-                  className="btn btn-sm btn-primary mt-4"
+                  className="btn btn-sm btn-primary bg-violet-600 border-none mt-4"
                 >
                   Apply Now
                 </button>
@@ -136,7 +136,7 @@ const CareerPage = () => {
             rows={5}
           ></textarea>
 
-          <button className="btn btn-primary w-full">Submit Application</button>
+          <button className="btn btn-primary bg-violet-600 border-none w-full">Submit Application</button>
         </form>
 
         <p className="text-xs text-gray-400 text-center mt-4">
@@ -153,7 +153,7 @@ const CareerPage = () => {
         </p>
 
         <Link href="/">
-          <button className="btn btn-outline mt-4">Back to Home</button>
+          <button className="btn btn-outline text-violet-600 mt-4">Back to Home</button>
         </Link>
       </section>
     </div>
