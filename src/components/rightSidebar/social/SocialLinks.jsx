@@ -24,7 +24,7 @@ const SocialLinks = () => {
   ];
 
   return (
-    <div className="bg-base-100 ">
+    <div className="bg-base-100">
       <h3 className="text-lg font-semibold mb-4">Find Us On</h3>
 
       <div className="border rounded-sm border-gray-400 divide-y divide-gray-400">

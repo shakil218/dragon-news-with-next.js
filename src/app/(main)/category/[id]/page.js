@@ -20,6 +20,7 @@ const CategoryByAllNewsPage = async ({params}) => {
       <div className="col-span-6">
         <CategoryNews allNews={allNews} />
       </div>
+      
       {/* Right sidebar social login */}
       <div className="col-span-3">
         <SocialLogin />

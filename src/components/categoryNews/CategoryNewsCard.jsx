@@ -1,7 +1,10 @@
+import Image from "next/image";
+import Link from "next/link";
 import { FaStar, FaEye, FaRegBookmark, FaShareAlt } from "react-icons/fa";
 
 const CategoryNewsCard = ({ news }) => {
   const {
+    _id,
     title,
     author,
     image_url,
@@ -18,14 +21,16 @@ const CategoryNewsCard = ({ news }) => {
     details.length > 200 ? details.slice(0, 200) + "..." : details;
 
   return (
-    <div className="bg-white rounded-md shadow-sm overflow-hidden border border-base-200">
+    <Link href={`/news/${_id}`} className="bg-white rounded-md shadow-sm overflow-hidden border border-base-200">
       
       {/* Header */}
       <div className="flex items-center justify-between p-4">
         <div className="flex items-center gap-3">
-          <img
+          <Image
             src={author.img}
-            alt={author.name}
+            alt={author.name || "Author-Name"}
+            width={400}
+            height={400}
             className="w-10 h-10 rounded-full object-cover"
           />
           <div>
@@ -51,9 +56,11 @@ const CategoryNewsCard = ({ news }) => {
 
       {/* Image */}
       <div className="p-4 pt-3">
-        <img
+        <Image
           src={image_url}
           alt="news"
+          width={500}
+          height={208}
           className="w-full h-52 object-cover rounded-lg"
         />
       </div>
@@ -93,7 +100,7 @@ const CategoryNewsCard = ({ news }) => {
           <span>{total_view}</span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
