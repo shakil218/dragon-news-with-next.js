@@ -14,7 +14,7 @@ const Categories = ({ categories, active_id }) => {
               key={category.category_id}
               className={`${active_id === category.category_id && "bg-slate-200"} text-md font-semibold p-2 rounded-sm`}
             >
-              {category.category_name}
+              <Link href={`/category/${category.category_id}`} className="block">{category.category_name}</Link>
             </li>
           ))}
         </ul>
