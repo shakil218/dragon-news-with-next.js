@@ -7,7 +7,6 @@ const CategoryByAllNewsPage = async ({params}) => {
   const {id} = await params;
   const categories = await getCategories();
   const allNews = await getAllNewsByCategory(id);
-  console.log(allNews);
 
   return (
     <div className="grid grid-cols-12 gap-5 py-10">

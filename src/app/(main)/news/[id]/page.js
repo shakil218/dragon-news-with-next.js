@@ -16,7 +16,10 @@ const NewsDetailsPage = async ({ params }) => {
 
   return (
     <div className="flex gap-6 py-10">
-      <div className="flex-1">
+      <div className="flex-1 space-y-6">
+        <h3 className="text-lg font-bold border-b border-b-base-300 pb-2">
+          Dragon News
+        </h3>
         <NewsDetailsCard news={news} />
       </div>
 
