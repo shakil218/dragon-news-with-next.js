@@ -7,7 +7,7 @@ const NewsTicker = async () => {
   const headlines = news.map((item) => item.title);
 
   return (
-    <div className="flex justify-center items-center bg-base-300 p-3 gap-3">
+    <div className="flex items-center bg-base-300 p-3 gap-3">
       <button className="bg-red-500 text-white px-3 py-2 text-lg font-medium">
         Latest
       </button>

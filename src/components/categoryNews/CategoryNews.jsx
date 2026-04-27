@@ -30,7 +30,7 @@ const CategoryNews = ({ allNews }) => {
         <div className="flex justify-center mt-6">
           <button
             onClick={() => setShowAll((prev) => !prev)}
-            className="px-6 py-2 bg-violet-500 text-white rounded-md cursor-pointer hover:bg-violet-600 transition"
+            className="px-6 py-2 bg-linear-to-br from-indigo-900 via-purple-900 to-black text-white rounded-md cursor-pointer transition"
           >
             {showAll ? "Show Less" : "Show More"}
           </button>

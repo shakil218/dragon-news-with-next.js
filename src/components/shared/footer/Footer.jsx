@@ -9,9 +9,11 @@ const Footer = () => {
       <div className=" max-w-7xl mx-auto px-4 py-10 flex flex-col md:flex-row justify-between gap-8">
         {/* 📰 Brand */}
         <div>
-          <h2 className="text-2xl font-extrabold text-red-600">
-            The Dragon News
-          </h2>
+          <div className="bg-linear-to-br from-indigo-900 via-purple-900 to-black bg-clip-text text-transparent transition-all">
+            <h2 className="text-2xl font-extrabold">
+              The Dragon News
+            </h2>
+          </div>
           <p className="mt-3 text-sm text-gray-500">
             Journalism Without Fear or Favour.
           </p>
