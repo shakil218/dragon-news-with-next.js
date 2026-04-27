@@ -8,7 +8,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "The Dragon News | Home",
+  title: "Home | Dragon News",
   description: "Stay updated with the latest breaking news, in-depth articles, and exclusive stories from The Dragon News. Covering global events, politics, sports, entertainment, and more.",
 };
 

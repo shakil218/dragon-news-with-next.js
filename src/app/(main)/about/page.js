@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "About | Dragon News",
+  description: "Learn about Dragon News, our mission, values, editorial principles, and the team driving fearless journalism.",
+  keywords: ["about", "dragon news", "journalism", "mission", "team", "newsroom"],
+};
+
 import Image from "next/image";
 import Link from "next/link";
 import { FaBullseye, FaEye, FaShieldAlt } from "react-icons/fa";

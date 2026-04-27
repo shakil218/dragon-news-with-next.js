@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Careers | Dragon News",
+  description: "Explore career opportunities at Dragon News and join our independent newsroom of journalists, editors, and storytellers.",
+  keywords: ["careers", "jobs", "Dragon News", "journalism careers", "join our newsroom"],
+};
+
 import Link from "next/link";
 import {
   FaPenNib,
