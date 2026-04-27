@@ -11,9 +11,7 @@ const CategoryNews = ({ allNews }) => {
 
   return (
     <div>
-      <h3 className="text-xl font-bold pb-2">
-        News by Category
-      </h3>
+      <h3 className="text-xl font-bold pb-2">News by Category</h3>
 
       <div className="grid grid-cols-1 gap-5">
         {allNews?.length > 0 ? (
@@ -21,7 +19,7 @@ const CategoryNews = ({ allNews }) => {
             <CategoryNewsCard key={news._id} news={news} />
           ))
         ) : (
-          <EmptyState/>
+          <EmptyState />
         )}
       </div>
 

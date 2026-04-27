@@ -1,7 +1,14 @@
 export const metadata = {
   title: "Careers | Dragon News",
-  description: "Explore career opportunities at Dragon News and join our independent newsroom of journalists, editors, and storytellers.",
-  keywords: ["careers", "jobs", "Dragon News", "journalism careers", "join our newsroom"],
+  description:
+    "Explore career opportunities at Dragon News and join our independent newsroom of journalists, editors, and storytellers.",
+  keywords: [
+    "careers",
+    "jobs",
+    "Dragon News",
+    "journalism careers",
+    "join our newsroom",
+  ],
 };
 
 import Link from "next/link";
@@ -50,8 +57,8 @@ const CareerPage = () => {
 
         <p className="mt-6 text-gray-500">
           We are building a fearless newsroom that values truth, integrity, and
-          impact. If you&apos;re passionate about storytelling, we want you on our
-          team.
+          impact. If you&apos;re passionate about storytelling, we want you on
+          our team.
         </p>
       </section>
 
@@ -100,9 +107,7 @@ const CareerPage = () => {
                 <p className="text-sm text-gray-500 mt-3">{job.desc}</p>
 
                 {/* APPLY BUTTON */}
-                <button
-                  className="btn btn-sm btn-primary bg-violet-600 border-none mt-4"
-                >
+                <button className="btn btn-sm btn-primary bg-linear-to-br from-indigo-900 via-purple-900 to-black border-none mt-4">
                   Apply Now
                 </button>
               </div>
@@ -142,7 +147,9 @@ const CareerPage = () => {
             rows={5}
           ></textarea>
 
-          <button className="btn btn-primary bg-violet-600 border-none w-full">Submit Application</button>
+          <button className="btn btn-primary bg-linear-to-br from-indigo-900 via-purple-900 to-black border-none w-full">
+            Submit Application
+          </button>
         </form>
 
         <p className="text-xs text-gray-400 text-center mt-4">
@@ -159,7 +166,11 @@ const CareerPage = () => {
         </p>
 
         <Link href="/">
-          <button className="btn btn-outline text-violet-600 mt-4">Back to Home</button>
+          <button className="btn border border-indigo-900 hover:border-indigo-950 mt-4">
+            <span className="bg-linear-to-br from-indigo-900 via-purple-900 to-black bg-clip-text text-transparent">
+              Back to Home
+            </span>
+          </button>
         </Link>
       </section>
     </div>

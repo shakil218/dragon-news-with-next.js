@@ -139,7 +139,7 @@ const AboutPage = () => {
         </p>
 
         <Link href="/career">
-          <button className="btn bg-violet-600 text-white mt-6">View Careers</button>
+          <button className="btn bg-linear-to-br from-indigo-900 via-purple-900 to-black text-white mt-6">View Careers</button>
         </Link>
       </section>
     </div>

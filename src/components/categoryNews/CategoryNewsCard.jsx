@@ -24,7 +24,7 @@ const CategoryNewsCard = ({ news }) => {
     <Link href={`/news/${_id}`} className="bg-white rounded-md shadow-sm overflow-hidden border border-base-200">
       
       {/* Header */}
-      <div className="flex items-center justify-between p-4">
+      <div className="flex items-center justify-between bg-slate-100 p-4 mb-3">
         <div className="flex items-center gap-3">
           <Image
             src={author.img}
