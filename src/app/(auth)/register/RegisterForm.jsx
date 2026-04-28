@@ -126,11 +126,9 @@ const RegisterForm = () => {
         throw new Error(error.message || "Signup failed");
       }
 
-      console.log("User created:", data);
       toast.success("Account created successfully 🚀");
       router.push("/");
     } catch (err) {
-      console.error(err.message);
       toast.error(err.message);
     } finally {
       setLoading(false);

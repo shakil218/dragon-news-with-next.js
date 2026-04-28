@@ -99,11 +99,9 @@ const LoginForm = () => {
         throw new Error(error.message || "Login failed");
       }
 
-      console.log("Logged in:", data);
       toast.success("Sign In User successfully 🚀");
       router.push("/");
     } catch (err) {
-      console.error(err.message);
       toast.error(err.message);
     } finally {
       setLoading(false);
