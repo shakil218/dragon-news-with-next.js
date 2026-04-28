@@ -3,10 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import user from "@/assets/user.png";
+import userFallbackImg from "@/assets/user.png";
 import NavLinks from "./NavLinks";
+import { authClient } from "@/lib/auth-client";
 
 const NavbarClient = () => {
+  const { data: session, isPending } = authClient.useSession();
+  const user = session?.user;
+  console.log(user, isPending);
   const pathname = usePathname();
 
   const isAuthPage = pathname === "/login" || pathname === "/register";
@@ -51,15 +55,46 @@ const NavbarClient = () => {
       </div>
 
       {/* RIGHT */}
-      <div className="navbar-end gap-5">
-        <Image src={user} alt="User" width={40} height={40} />
+      {isPending ? (
+        <div className="navbar-end gap-3 text-gray-600">
+          <span className="font-semibold">Loading</span>
+          <span className="loading loading-dots loading-sm"></span>
+        </div>
+      ) : user ? (
+        <div className="navbar-end gap-5">
+          <p>Hello, {user?.name.split(" ", 1).join(" ")}</p>
+          <div className="relative inline-flex p-0.5 group">
+            <div className="absolute inset-0 rounded-full bg-linear-to-br from-indigo-900 via-purple-900 to-black transition duration-300 group-hover:blur-sm group-hover:opacity-90" />
 
-        <Link href="/login">
-          <button className="btn bg-linear-to-br from-indigo-900 via-purple-900 to-black text-white">
-            Login
+            <div className="relative rounded-full overflow-hidden bg-white dark:bg-black p-0.5">
+              <Image
+                src={user?.image || userFallbackImg}
+                alt="User"
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
+            </div>
+          </div>
+
+          <button
+            onClick={async () => await authClient.signOut()}
+            className="btn bg-linear-to-br from-indigo-900 via-purple-900 to-black text-white cursor-pointer"
+          >
+            Logout
           </button>
-        </Link>
-      </div>
+        </div>
+      ) : (
+        <div className="navbar-end gap-5">
+          <Image src={userFallbackImg} alt="User" width={40} height={40} />
+
+          <Link href="/login">
+            <button className="btn bg-linear-to-br from-indigo-900 via-purple-900 to-black text-white">
+              Login
+            </button>
+          </Link>
+        </div>
+      )}
     </div>
   );
 };

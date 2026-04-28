@@ -6,13 +6,13 @@ const Loading = () => {
       <div className="relative w-20 h-20 flex items-center justify-center">
         
         {/* Outer Glow Ring */}
-        <div className="absolute w-full h-full rounded-full border-4 border-red-200 opacity-40 animate-pulse"></div>
+        <div className="absolute w-full h-full rounded-full border-4 border-indigo-900/30 opacity-40 animate-pulse"></div>
 
         {/* Rotating Ring */}
-        <div className="absolute w-full h-full rounded-full border-4 border-red-600 border-t-transparent animate-spin"></div>
+        <div className="absolute w-full h-full rounded-full border-4 border-indigo-900 via-purple-900 to-black border-t-transparent animate-spin"></div>
 
         {/* Inner Dot */}
-        <div className="w-3 h-3 bg-red-600 rounded-full animate-ping"></div>
+        <div className="w-3 h-3 bg-linear-to-br from-indigo-900 via-purple-900 to-black rounded-full animate-ping"></div>
       </div>
 
       {/* 📰 Text */}
@@ -26,9 +26,9 @@ const Loading = () => {
 
       {/* ✨ Animated Dots */}
       <div className="flex gap-1 mt-3">
-        <span className="w-2 h-2 bg-red-600 rounded-full animate-bounce"></span>
-        <span className="w-2 h-2 bg-red-600 rounded-full animate-bounce delay-100"></span>
-        <span className="w-2 h-2 bg-red-600 rounded-full animate-bounce delay-200"></span>
+        <span className="w-2 h-2 bg-linear-to-br from-indigo-900 via-purple-900 to-black rounded-full animate-bounce"></span>
+        <span className="w-2 h-2 bg-linear-to-br from-indigo-900 via-purple-900 to-black rounded-full animate-bounce delay-100"></span>
+        <span className="w-2 h-2 bg-linear-to-br from-indigo-900 via-purple-900 to-black rounded-full animate-bounce delay-200"></span>
       </div>
 
     </div>

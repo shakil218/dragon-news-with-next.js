@@ -12,7 +12,7 @@ const Categories = ({ categories, active_id }) => {
           {categories.map((category) => (
             <li
               key={category.category_id}
-              className={`${active_id === category.category_id && "bg-slate-200"} text-md font-semibold p-2 rounded-sm`}
+              className={`${active_id === category.category_id && "bg-linear-to-br from-indigo-900 via-purple-900 to-black text-white"} text-md font-semibold p-2 rounded-sm`}
             >
               <Link href={`/category/${category.category_id}`} className="block">{category.category_name}</Link>
             </li>
