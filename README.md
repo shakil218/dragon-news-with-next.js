@@ -1,3 +1,5 @@
+<img width="1886" height="853" alt="image" src="https://github.com/user-attachments/assets/9223b7a8-707c-49d1-9711-34bce807d8be" />
+
 # 📰 Dragon News
 
 Dragon News is a modern online news platform built with Next.js, React, MongoDB, and Better Auth. The platform allows users to browse the latest news, explore categorized articles, read detailed news content, and securely authenticate to access personalized features.
